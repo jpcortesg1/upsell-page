@@ -1,26 +1,30 @@
-<div class="product flex gap-4 my-6 flex-wrap">
-  <div class="left bg-[#2C7EF8] rounded-xl flex-1">
+<div class="product flex gap-4 my-6 flex-wrap md:my-8 md:gap-6">
+  <div class="left bg-[#2C7EF8] rounded-xl flex-1 flex items-center">
     <img
       src="https://s3-alpha-sig.figma.com/img/d7dc/d812/be356da38eef349d3173d8e6588e7d74?Expires=1696204800&Signature=JsAgU3tZulZupdLZF9VVyoJK3TiMHxJ-LNq7rU5P1~LbsZqJ5a8TiYFqYEmVEK9aq3Be1doZkJwowSmkGStMAqHXOFFnPtaxhnIS9FqAHzSj4e8w~uq9xClMHWvP124pDJULrf8Mfb9TFf4-eNmj9GhrHgvPUXCv7-BtF7DfTOjruxGWyQwkeAiD4KMgrmjvNgjfbzhmejsyiTB5Qhf9iLKOBBst3YZgvUQ27jOSfcaRzS0p8Ej9PU1j7i~eJr1yeILQSXgoa0lWl-PTqN8qqNWCchBgrtc5n-3QQU8v3zE3wlBgmZaBJfuSsPnNe~6fUP2v3dNohP8ikmer5qr0Ag__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
       alt="product image "
     />
   </div>
+
   <div class="right flex-[3] my-2 flex flex-col justify-between">
     <div class="head flex w-full justify-between items-center">
-      <h2>Clarifion Air Ionizer</h2>
-      <div class="price flex items-center gap-2">
-        <span class="old text-[#969696] text-[10px] font-semibold">$ 180</span>
-        <span class="new text-[#2C7EF8] text-sm font-semibold">$ 84</span>
+      <h2 class="text-sm md:text-xl">Clarifion Air Ionizer</h2>
+      <div class="price flex items-center gap-2 md:gap-[10px]">
+        <span class="old text-[#969696] text-[10px] font-semibold md:text-base"
+          >$ 180</span
+        >
+        <span class="new text-[#2C7EF8] text-sm font-semibold md:text-[22px]"
+          >$ 84</span
+        >
       </div>
     </div>
+
     <div class="calification flex">
       {
         [1, 2, 3, 4, 5].map((item, index) => (
-          <span class="w-3 h-4">
+          <span class="w-3 h-3 md:w-[18px] md:h-[18px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="12"
               viewBox="0 0 12 12"
               fill="none"
             >
@@ -33,24 +37,27 @@
         ))
       }
     </div>
+
     <div class="stock flex items-center gap-4">
-      <span class="w-3 h-3">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="12"
-          height="12"
-          viewBox="0 0 12 12"
-          fill="none"
-        >
+      <span class="w-3 h-3 md:w-4 md:h-4">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none">
           <ellipse cx="6" cy="6" rx="6" ry="6.00003" fill="#E3EEFF"></ellipse>
           <ellipse cx="6" cy="5.99998" rx="3" ry="3.00001" fill="#2C7EF8"
           ></ellipse>
         </svg>
       </span>
-      <p class="text-xs text-[#37465A]">12 left in Stock</p>
+      <p class="text-xs text-[#37465A] md:text-base">12 left in Stock</p>
+    </div>
+
+    <div class="description w-full text-[#4D5254] hidden md:flex text-base">
+      <p>
+        Simply plug a Clarifion into any standard outlet and replace bulky,
+        expensive air purifiers with a simple.
+      </p>
     </div>
   </div>
-  <div class="description text-xs w-full text-center text-[#4D5254]">
+
+  <div class="description text-xs w-full text-center text-[#4D5254] md:hidden">
     <p>
       Simply plug a Clarifion into any standard outlet and replace bulky,
       expensive air purifiers with a simple.
