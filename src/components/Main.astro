@@ -9,24 +9,26 @@ import ConfirmButton from "./main/ConfirmButton.astro";
 import PaymentInformation from "./main/PaymentInformation.astro";
 import NotAccept from "./main/NotAccept.astro";
 import SatisfactionGuarantee from "./main/SatisfactionGuarantee.astro";
+import Comment from "./main/Comment.astro";
 ---
 
 <main class="my-8 px-[5.56%]">
   <Title />
   <Steps />
-  <div class="content md:bg-[#FAFAFA] md:p-10 rounded-[10px] md:flex">
-    <div class="left md:flex-1">
-      <div class="justify-center items-center hidden md:flex">
+  <div class="content md:bg-[#FAFAFA] md:p-10 rounded-[10px] md:flex md:gap-10">
+    <div class="left md:flex-1 hidden md:flex flex-col justify-between">
+      <div class="items-center md:flex">
         <img
-          class="rounded-[10px]"
+          class="rounded-[10px] w-full"
           src="https://s3-alpha-sig.figma.com/img/ae69/c276/4b81b2e6a429f79dc3a06643582245fb?Expires=1696204800&Signature=WSwXFGjlcfsmheTIRpXsi8jwakXORD~CoNsdooWpNwMzDRbFatcjyvUjxZ5sgLC87dmDecV1WGPGQVEE9c3HIzaChDmOSifT40dTEXJEc1btk5mh~4967YfPW~ZHjtnzFW2Ehix7SypoCIxt9GLkRwdSTvxkHdLtiND83g3z7ARF~wgjy~U7VpSHe1fvjWon-MGwQysXgavr9WaEDV5~CVPTMg5kCdM8Hgo5ACp9OFI8lcDw9v5s1vXVLS31PbTaxkIYJvmAUbnN98LXBOWlfyGriwPcuH4~VZGqTVxtwCr8CxiU1XFz~awLADzsOzwm6taA5Pwwbr4kP5eCOQJyuA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
           alt=""
         />
       </div>
+      <Comment />
     </div>
-    <div class="right md:flex-1">
+    <div class="right flex flex-col justify-between gap-6 md:flex-1 md:gap-8">
       <Information />
-      <div class="mt-6 flex justify-center items-center md:hidden">
+      <div class="flex justify-center items-center md:hidden">
         <img
           class="rounded-[10px]"
           src="https://s3-alpha-sig.figma.com/img/ae69/c276/4b81b2e6a429f79dc3a06643582245fb?Expires=1696204800&Signature=WSwXFGjlcfsmheTIRpXsi8jwakXORD~CoNsdooWpNwMzDRbFatcjyvUjxZ5sgLC87dmDecV1WGPGQVEE9c3HIzaChDmOSifT40dTEXJEc1btk5mh~4967YfPW~ZHjtnzFW2Ehix7SypoCIxt9GLkRwdSTvxkHdLtiND83g3z7ARF~wgjy~U7VpSHe1fvjWon-MGwQysXgavr9WaEDV5~CVPTMg5kCdM8Hgo5ACp9OFI8lcDw9v5s1vXVLS31PbTaxkIYJvmAUbnN98LXBOWlfyGriwPcuH4~VZGqTVxtwCr8CxiU1XFz~awLADzsOzwm6taA5Pwwbr4kP5eCOQJyuA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
@@ -36,9 +38,11 @@ import SatisfactionGuarantee from "./main/SatisfactionGuarantee.astro";
       <Product />
       <Characteristics />
       <Promotion />
-      <ConfirmButton />
-      <PaymentInformation />
-      <NotAccept />
+      <div class="flex flex-col justify-between gap-3">
+        <ConfirmButton />
+        <PaymentInformation />
+        <NotAccept />
+      </div>
       <SatisfactionGuarantee />
     </div>
   </div>
