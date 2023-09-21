@@ -1,0 +1,36 @@
+---
+import Title from "./main/Titile.astro";
+import Steps from "./main/Steps.astro";
+import Information from "./main/Information.astro";
+import Product from "./main/Product.astro";
+import Characteristics from "./main/Characteristics.astro";
+import Promotion from "./main/Promotion.astro";
+import ConfirmButton from "./main/ConfirmButton.astro";
+import PaymentInformation from "./main/PaymentInformation.astro";
+import NotAccept from "./main/NotAccept.astro";
+import SatisfactionGuarantee from "./main/SatisfactionGuarantee.astro";
+---
+
+<main class="my-8 px-[5.56%]">
+  <Title />
+  <Steps />
+  <div class="content">
+    <div class="right">
+      <Information />
+      <div class="mt-6 flex justify-center items-center">
+        <img
+          class="rounded-[10px]"
+          src="https://s3-alpha-sig.figma.com/img/ae69/c276/4b81b2e6a429f79dc3a06643582245fb?Expires=1696204800&Signature=WSwXFGjlcfsmheTIRpXsi8jwakXORD~CoNsdooWpNwMzDRbFatcjyvUjxZ5sgLC87dmDecV1WGPGQVEE9c3HIzaChDmOSifT40dTEXJEc1btk5mh~4967YfPW~ZHjtnzFW2Ehix7SypoCIxt9GLkRwdSTvxkHdLtiND83g3z7ARF~wgjy~U7VpSHe1fvjWon-MGwQysXgavr9WaEDV5~CVPTMg5kCdM8Hgo5ACp9OFI8lcDw9v5s1vXVLS31PbTaxkIYJvmAUbnN98LXBOWlfyGriwPcuH4~VZGqTVxtwCr8CxiU1XFz~awLADzsOzwm6taA5Pwwbr4kP5eCOQJyuA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          alt=""
+        />
+      </div>
+      <Product />
+      <Characteristics />
+      <Promotion />
+      <ConfirmButton />
+      <PaymentInformation />
+      <NotAccept />
+      <SatisfactionGuarantee />
+    </div>
+  </div>
+</main>
